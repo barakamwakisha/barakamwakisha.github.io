@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #000;
+}
+
+.navbar-nav>li {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navbar-nav>li:nth-child(1) {
+    margin-left: -40px;
+}
+
+.nav-link {
+    color: #F5F6F8 !important;
+}
+
+.nav-link:hover {
+    color: #FF5C01 !important;
+}
+
+.nav-link:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #FF5C01;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+.nav-link:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
