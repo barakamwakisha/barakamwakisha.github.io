@@ -1,5 +1,127 @@
+/** fonts **/
+
+@font-face {
+    font-family: 'Sofia Pro Semi';
+    src: url('fonts/SofiaProSemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProRegular-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro Semi';
+    src: url('fonts/SofiaProSemiBold-Italic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProLight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProMedium-Italic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProUltraLight-Italic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProMedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProExtraLight-Italic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProLight-Italic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProBlack-Italic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProBlack.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProUltraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/SofiaProBold-Italic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Sofia Pro';
+}
+
 .navbar {
     background-color: #000;
+}
+
+.navbar-collapse {
+    margin-left: -40px;
 }
 
 .navbar-nav>li {
@@ -7,19 +129,16 @@
     padding-right: 40px;
 }
 
-.navbar-nav>li:nth-child(1) {
-    margin-left: -40px;
-}
-
 .nav-link {
     color: #F5F6F8 !important;
+    font-size: 1 rem;
 }
 
 .nav-link:hover {
     color: #FF5C01 !important;
 }
 
-.nav-link:after{
+.nav-link:after {
     content: '';
     display: block;
     height: 1.5px;
@@ -27,7 +146,44 @@
     transform: scaleX(0);
     transition: transform .3s;
 }
-.nav-link:hover:after{
+
+.nav-link:hover:after {
     transform: scaleX(1);
     transition: transform .3s;
+}
+
+.btn-cta {
+    background-color: #1978A6;
+    border-radius: 30px;
+}
+
+.slideshow-link {
+    text-decoration: none;
+}
+
+.slideshow-link:hover {
+    text-decoration: none;
+}
+
+.slideshow-technology, .slideshow-technology:hover {
+    color: #1978A6;
+}
+
+.slideshow-usecase, .slideshow-usecase:hover {
+    color: #FF5C01;
+}
+
+/** Animations **/
+
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
 }

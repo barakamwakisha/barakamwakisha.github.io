@@ -22,7 +22,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="nav navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Let's work for you</a>
@@ -34,11 +34,29 @@
                         <a class="nav-link" href="#">Partnerships</a>
                     </li>
                 </ul>
+                <!-- Add Search Button -->
             </div>
         </nav>
     </header>
     <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="slideshow">
 
+
+                        <h1 class="text-center mt-5">At djital, we leverage
+                            <transition name="slide-fade" mode="out-in"><a :key="technology" href="#"
+                                    class="slideshow-link slideshow-technology"> {{ technology }} </a></transition>
+                            to build
+                            <transition name="slide-fade" mode="out-in"><a :key="useCase" href="#"
+                                    class="slideshow-link slideshow-usecase"> {{ useCase }} </a></transition>
+                            solutions for your business needs
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -47,9 +65,103 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB    padding-left: 40px; */
+        /* padding-right: 40px;1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        var slideshow = new Vue({
+            el: '#slideshow',
+            data: {
+                technologyIndex: 0,
+                useCaseIndex: 0,
+                technology: '',
+                useCase: '',
+                technologies: [
+                    {
+                        technology: 'artificial intelligence',
+                        link: '#',
+                        useCases: [
+                            {
+                                useCase: 'business productivity',
+                                link: '#'
+                            },
+                            {
+                                useCase: 'digital channel engagement',
+                                link: '#'
+                            }
+                        ]
+                    },
+                    {
+                        technology: 'blockchain',
+                        link: '#',
+                        useCases: [
+                            {
+                                useCase: 'traceability systems',
+                                link: '#'
+                            },
+                            {
+                                useCase: 'P2P network',
+                                link: '#'
+                            }
+                        ]
+                    },
+                    {
+                        technology: 'internet of things',
+                        link: '#',
+                        useCases: [
+                            {
+                                useCase: 'asset tracking management',
+                                link: '#'
+                            },
+                            {
+                                useCase: 'decision support systems',
+                                link: '#'
+                            }
+                        ]
+                    }
+                ]
+
+            },
+            created: function () {
+                let technologyIndex = this.technologyIndex;
+                let useCaseIndex = this.useCaseIndex;
+                let technologies = this.technologies;
+
+                this.technology = technologies[technologyIndex].technology;
+                this.useCase = technologies[technologyIndex].useCases[useCaseIndex].useCase;
+
+                setInterval(this.nextFeature, 2500);
+            },
+
+            methods: {
+                nextFeature: function () {
+
+                    let technologiesCount = this.technologies.length;
+                    let technologyIndex = this.technologyIndex;
+
+                    let useCasesCount = this.technologies[technologyIndex].useCases.length;
+                    let useCaseIndex = this.useCaseIndex;
+
+                    if (useCaseIndex + 1 == useCasesCount) {
+                        this.useCaseIndex = 0;
+
+                        if (technologyIndex + 1 == technologiesCount) {
+                            this.technologyIndex = 0;
+                        } else {
+                            this.technologyIndex += 1;
+                        }
+                    } else {
+                        this.useCaseIndex += 1;
+                    }
+
+                    this.technology = this.technologies[technologyIndex].technology;
+                    this.useCase = this.technologies[technologyIndex].useCases[useCaseIndex].useCase;
+                }
+            }
+
+        })
+    </script>
 </body>
 
 </html>
