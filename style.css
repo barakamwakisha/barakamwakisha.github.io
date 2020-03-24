@@ -157,6 +157,24 @@ body {
     border-radius: 30px;
 }
 
+#hero {
+ background-color: #000;
+}
+
+#slideshow {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-90%);
+}
+
+.djital-slideshow {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+    text-align: center;
+    color: #fff;
+}
+
 .slideshow-link {
     text-decoration: none;
 }
@@ -172,6 +190,8 @@ body {
 .slideshow-usecase, .slideshow-usecase:hover {
     color: #FF5C01;
 }
+
+
 
 /** Animations **/
 

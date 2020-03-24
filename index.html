@@ -39,24 +39,26 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="slideshow">
-
-
-                        <h1 class="text-center mt-5">At djital, we leverage
-                            <transition name="slide-fade" mode="out-in"><a :key="technology" href="#"
-                                    class="slideshow-link slideshow-technology"> {{ technology }} </a></transition>
-                            to build
-                            <transition name="slide-fade" mode="out-in"><a :key="useCase" href="#"
-                                    class="slideshow-link slideshow-usecase"> {{ useCase }} </a></transition>
-                            solutions for your business needs
-                        </h1>
+        <section id="hero">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div id="slideshow">
+                                <h1 class="djital-slideshow">Using
+                                    <transition name="slide-fade" mode="out-in"><a :key="technology" href="#"
+                                            class="slideshow-link slideshow-technology"> {{ technology }} </a></transition>
+                                    to build <br />
+                                    <transition name="slide-fade" mode="out-in"><a :key="useCase" href="#"
+                                            class="slideshow-link slideshow-usecase"> {{ useCase }} </a></transition>
+                                    <br />
+                                    solutions for your business needs
+                                </h1>
+                            </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -65,10 +67,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB    padding-left: 40px; */
-        /* padding-right: 40px;1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
     <script>
         var slideshow = new Vue({
             el: '#slideshow',
@@ -131,7 +133,7 @@
                 this.technology = technologies[technologyIndex].technology;
                 this.useCase = technologies[technologyIndex].useCases[useCaseIndex].useCase;
 
-                setInterval(this.nextFeature, 2500);
+                setInterval(this.nextFeature, 3000);
             },
 
             methods: {
