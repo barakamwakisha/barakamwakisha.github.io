@@ -41,23 +41,20 @@
     <main>
         <section id="hero">
             <div id="particles-js"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                            <div id="slideshow">
-                                <h1 class="djital-slideshow">Using
-                                    <transition name="slide-fade" mode="out-in"><a :key="technology" href="#"
-                                            class="slideshow-link slideshow-technology"> {{ technology }} </a></transition>
-                                    to build <br />
-                                    <transition name="slide-fade" mode="out-in"><a :key="useCase" href="#"
-                                            class="slideshow-link slideshow-usecase"> {{ useCase }} </a></transition>
-                                    <br />
-                                    solutions for your business needs
-                                </h1>
-                            </div>
-                    </div>
+            <div class="slideshow-container">
+                <div id="slideshow">
+                    <h1 class="djital-slideshow">Using
+                        <transition name="slide-fade" mode="out-in"><a :key="technology" href="#"
+                                class="slideshow-link slideshow-technology"> {{ technology }} </a></transition>
+                        to build <br />
+                        <transition name="slide-fade" mode="out-in"><a :key="useCase" href="#"
+                                class="slideshow-link slideshow-usecase"> {{ useCase }} </a></transition>
+                        <br />
+                        solutions for your business needs
+                    </h1>
                 </div>
             </div>
+            <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon" src="img/arrow-down.png"></a>
         </section>
     </main>
 

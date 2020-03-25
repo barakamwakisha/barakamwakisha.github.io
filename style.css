@@ -158,19 +158,22 @@ body {
 }
 
 #hero {
- background-color: #000;
+    position: relative;
+    background-color: #000;
+    min-height: 80vh;
 }
 
-#slideshow {
+.slideshow-container {
     position: absolute;
-    top: 90%;
-    transform: translateY(-90%);
+    top: 20px;
+    width: 100%;
+    padding: 20px;
 }
 
 .djital-slideshow {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30vh;
+    margin-top: 20vh;
     text-align: center;
     color: #fff;
 }
@@ -191,7 +194,19 @@ body {
     color: #FF5C01;
 }
 
-
+.ct-btn-scroll {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
 
 /** Animations **/
 
