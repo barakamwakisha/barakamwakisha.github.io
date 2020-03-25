@@ -2,112 +2,112 @@
 
 @font-face {
     font-family: 'Sofia Pro Semi';
-    src: url('fonts/SofiaProSemiBold.woff2') format('woff2');
+    src: url('../fonts/SofiaProSemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProRegular-Italic.woff2') format('woff2');
+    src: url('../fonts/SofiaProRegular-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Sofia Pro Semi';
-    src: url('fonts/SofiaProSemiBold-Italic.woff2') format('woff2');
+    src: url('../fonts/SofiaProSemiBold-Italic.woff2') format('woff2');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProLight.woff2') format('woff2');
+    src: url('../fonts/SofiaProLight.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProExtraLight.woff2') format('woff2');
+    src: url('../fonts/SofiaProExtraLight.woff2') format('woff2');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProMedium-Italic.woff2') format('woff2');
+    src: url('../fonts/SofiaProMedium-Italic.woff2') format('woff2');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProUltraLight-Italic.woff2') format('woff2');
+    src: url('../fonts/SofiaProUltraLight-Italic.woff2') format('woff2');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProRegular.woff2') format('woff2');
+    src: url('../fonts/SofiaProRegular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProMedium.woff2') format('woff2');
+    src: url('../fonts/SofiaProMedium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProBold.woff2') format('woff2');
+    src: url('../fonts/SofiaProBold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProExtraLight-Italic.woff2') format('woff2');
+    src: url('../fonts/SofiaProExtraLight-Italic.woff2') format('woff2');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProLight-Italic.woff2') format('woff2');
+    src: url('../fonts/SofiaProLight-Italic.woff2') format('woff2');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProBlack-Italic.woff2') format('woff2');
+    src: url('../fonts/SofiaProBlack-Italic.woff2') format('woff2');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProBlack.woff2') format('woff2');
+    src: url('../fonts/SofiaProBlack.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProUltraLight.woff2') format('woff2');
+    src: url('../fonts/SofiaProUltraLight.woff2') format('woff2');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('fonts/SofiaProBold-Italic.woff2') format('woff2');
+    src: url('../fonts/SofiaProBold-Italic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
 }
@@ -139,7 +139,7 @@ a {
     left: 0;
     right: 0;
     padding: 15px;
-    background-image: url('img/stripes.svg');
+    background-image: url('../img/stripes.svg');
     background-repeat: no-repeat;
     background-position-x: 0;
     background-position-y: 100%;
