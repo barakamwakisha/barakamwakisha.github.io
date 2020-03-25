@@ -13,6 +13,10 @@ $(document).ready(function () {
         dropdownMenu.parent().toggleClass("show");
         navLink.toggleClass("active");
     });
+
+    $('.dropdown-toggle').click(function(event){
+        event.stopPropagation();
+    });
 });
 
 $(document).ready(function () {
