@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/dots.svg" type="image/x-icon">
+    <title>djital | Empowering Lives</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="djital Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item dropdown menu-area">
+                        <a class="nav-link dropdown-toggle" href="" id="customerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Let's work for you
+                        </a>
+                        <div class="dropdown-menu mega-area" aria-labelledby="customerDropdown">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <h5 class="menu-column-title">WE BUILT THESE SOLUTIONS</h5>
+                                    <a href="other.html" class="dropdown-item">aGrowChain</a>
+                                    <a href="other.html" class="dropdown-item">atum8</a>
+                                    <a href="other.html" class="dropdown-item">Locate365</a>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <h5 class="menu-column-title">USING THESE TECHNOLOGIES</h5>
+                                    <a href="other.html" class="dropdown-item">Artificial Intelligence</a>
+                                    <a href="other.html" class="dropdown-item">Internet Of Things</a>
+                                    <a href="other.html" class="dropdown-item">Blockchain</a>
+                                    <a href="other.html" class="dropdown-item">Mixed Reality</a>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <h5 class="menu-column-title">FOR THESE INDUSTRIES</h5>
+                                    <a href="other.html" class="dropdown-item">Agriculture</a>
+                                    <a href="other.html" class="dropdown-item">FinTech</a>
+                                    <a href="other.html" class="dropdown-item">Supply Chain</a>
+                                    <a href="other.html" class="dropdown-item">Public Sector</a>
+                                    <a href="other.html" class="dropdown-item">Consumer Services</a>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <h5 class="menu-column-title">NEED A CUSTOM SOLUTION?</h5>
+                                    <a href="other.html" class="dropdown-item">Challenge Us!</a>
+                                    <a href="other.html" class="dropdown-item">Contact Support</a>
+                                    <a href="other.html" class="dropdown-item">Customer Portal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown menu-area">
+                        <a class="nav-link dropdown-toggle" href="" id="employeeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Work for us
+                        </a>
+                        <div class="dropdown-menu mega-area" aria-labelledby="employeeDropdown">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                  <h5 class="menu-column-title">JOINING US?</h5>
+                                    <a href="other.html" class="dropdown-item">Life @ djital</a>
+                                    <a href="other.html" class="dropdown-item">Job Vacancies</a>
+                                    <a href="other.html" class="dropdown-item">Apply Now!</a>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <h5 class="menu-column-title">QUICK LINKS</h5>
+                                    <a href="other.html" class="dropdown-item">Employee Portal</a>
+                                    <a href="other.html" class="dropdown-item">Entrepreneurship Challenge</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown menu-area">
+                        <a class="nav-link dropdown-toggle" href="" id="partnershipDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Let's work together
+                        </a>
+                        <div class="dropdown-menu mega-area" aria-labelledby="partnershipDropdown">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h5 class="menu-column-title">PARTNERSHIP</h5>
+                                    <a href="other.html" class="dropdown-item">Our Philosophy</a>
+                                    <a href="other.html" class="dropdown-item">Sell With Us</a>
+                                    <a href="other.html" class="dropdown-item">Elite List</a>
+                                    <a href="other.html" class="dropdown-item">Become A Partner</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- add search -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div id="particles-js"></div>
+            <div class="slideshow-container">
+                <div id="slideshow">
+                    <h1 class="djital-slideshow">Using
+                        <transition name="slide-fade" mode="out-in"><a :key="technology" href="other.html"
+                                class="slideshow-link slideshow-technology"> {{ technology }} </a></transition>
+                        to build <br />
+                        <transition name="slide-fade" mode="out-in"><a :key="useCase" href="other.html"
+                                class="slideshow-link slideshow-usecase"> {{ useCase }} </a></transition>
+                        <br />
+                        solutions for your business needs
+                    </h1>
+                </div>
+            </div>
+            <a class="ct-btn-scroll ct-js-btn-scroll" href="#footer"><img alt="Arrow Down Icon" src="img/arrow-down.png"></a>
+        </section>
+
+        <section id="footer" class="footers bg-light pt-5 pb-3">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 footers-one">
+                         <div class="footers-logo">
+                             <img src="img/logo-dark.jpeg" alt="djital Logo" style="width:120px;">
+                         </div>
+                         <div class="footers-info mt-3">
+                             <p>Leveraging technology to empower lives in Africa and across the globe</p>
+                         </div>
+                         <div class="social-icons">
+                         <a href="other.html"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                         <a href="other.html"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
+                         <a href="other.html"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
+                         <a href="other.html"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+                     </div>
+                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footers-two">
+                         <h5>Essentials </h5>
+                         <ul class="list-unstyled">
+                          <li><a href="other.html">Customer Support</a></li>
+                          <li><a href="other.html">Internal Tools</a></li>
+                          <li><a href="other.html">Challenge Us</a></li>
+                         </ul>
+                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footers-three">
+                         <h5>Information </h5>
+                         <ul class="list-unstyled">
+                          <li><a href="other.html">Our Story</a></li>
+                          <li><a href="other.html">Vison & Values</a></li>
+                          <li><a href="other.html">Team</a></li>
+                          <li><a href="other.html">Visit Us</a></li>
+                         </ul>
+                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footers-four">
+                         <h5>Explore </h5>
+                         <ul class="list-unstyled">
+                            <li><a href="other.html">Industries</a></li>
+                            <li><a href="other.html">Technologies</a></li>
+                            <li><a href="other.html">Products</a></li>
+                         </ul>
+                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footers-five">
+                         <h5>Company </h5>
+                         <ul class="list-unstyled">
+                          <li><a href="other.html">Careers</a></li>
+                          <li><a href="other.html">For Partners</a></li>
+                          <li><a href="other.html">Contact Us</a></li>
+                          <li><a href="other.html">Policy</a></li>
+                         </ul>
+                     </div>
+
+                </div>
+            </div>
+         </section>
+         <section class="copyright border">
+             <div class="container">
+                 <div class="row text-center">
+                     <div class="col-md-12 pt-3">
+                         <p class="text-muted">© 2020 djital. All Rights Reserved</p>
+                     </div>
+                 </div>
+             </div>
+         </section>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vue.js"></script>
+    <script>
+        var slideshow = new Vue({
+            el: '#slideshow',
+            data: {
+                technologyIndex: 0,
+                useCaseIndex: 0,
+                technology: '',
+                useCase: '',
+                technologies: [
+                    {
+                        technology: 'artificial intelligence',
+                        link: '#',
+                        useCases: [
+                            {
+                                useCase: 'business productivity',
+                                link: '#'
+                            },
+                            {
+                                useCase: 'digital channel engagement',
+                                link: '#'
+                            }
+                        ]
+                    },
+                    {
+                        technology: 'blockchain',
+                        link: '#',
+                        useCases: [
+                            {
+                                useCase: 'traceability systems',
+                                link: '#'
+                            },
+                            {
+                                useCase: 'P2P networking',
+                                link: '#'
+                            }
+                        ]
+                    },
+                    {
+                        technology: 'internet of things',
+                        link: '#',
+                        useCases: [
+                            {
+                                useCase: 'asset tracking management',
+                                link: '#'
+                            },
+                            {
+                                useCase: 'decision support systems',
+                                link: '#'
+                            }
+                        ]
+                    }
+                ]
+
+            },
+            created: function () {
+                let technologyIndex = this.technologyIndex;
+                let useCaseIndex = this.useCaseIndex;
+                let technologies = this.technologies;
+
+                this.technology = technologies[technologyIndex].technology;
+                this.useCase = technologies[technologyIndex].useCases[useCaseIndex].useCase;
+
+                setInterval(this.nextFeature, 3000);
+            },
+
+            methods: {
+                nextFeature: function () {
+
+                    let technologiesCount = this.technologies.length;
+                    let technologyIndex = this.technologyIndex;
+
+                    let useCasesCount = this.technologies[technologyIndex].useCases.length;
+                    let useCaseIndex = this.useCaseIndex;
+
+                    if (useCaseIndex + 1 == useCasesCount) {
+                        this.useCaseIndex = 0;
+
+                        if (technologyIndex + 1 == technologiesCount) {
+                            this.technologyIndex = 0;
+                        } else {
+                            this.technologyIndex += 1;
+                        }
+                    } else {
+                        this.useCaseIndex += 1;
+                    }
+
+                    this.technology = this.technologies[technologyIndex].technology;
+                    this.useCase = this.technologies[technologyIndex].useCases[useCaseIndex].useCase;
+                }
+            }
+
+        })
+    </script>
+</body>
+
+</html>
